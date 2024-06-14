@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    color:white;
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100%;   
+    /* background-image: url('./imgs/poster.png');
+    background-repeat: cover; */
+    
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;    
+    list-style-type: none;
+    padding: 2em 25vw;
+    justify-content: space-between;
+    align-items: flex-end
+
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.info_serie {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+.genero {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;    
+}
+
+.episodios {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.card-episodio {
+    width: 230px;
+    height: 135px;
+    background-color: #E5E5E5;
+    border-radius: 4px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.m-t-14 {
+    margin-top: 14px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-b-28 {
+    margin-bottom: 28px;
+}
+
+.m-t-56 {
+    margin-top: 56px;
+}
+
+.poster {
+    width: 392px;
+}
+
+.ph-30 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.gap-150 {
+    gap: 150px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.social {
+    width: 30px;
+    height: 170px;
+    position: absolute;
+    right: 30px;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    margin: 60px 0;
+}
+
+.icone{
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+   margin-bottom: 20px; /* Adiciona espaçamento de 20px abaixo de cada ícone */
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    margin: 0 10px ; /* Adiciona 10px de margem à esquerda e à direita de cada item */
+}
+
+
+/* Remove o espaçamento da última ícone, se necessário 
+.social .icone:last-child {
+    margin-bottom: 0;
+} */

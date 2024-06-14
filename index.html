@@ -1,11 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="pt-BR">
+    <head>
+        <title>Netflix [Clone]</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+       
+    </head>
+    <body>
+        <!-- flex ; column -->
+        <class="container">
+            <!-- nav, ul -->
+            <div class="menu">
+                <ul>
+                    <!-- <a aria-label="Ir para sobre" href="#sobre">Sobre</a> -->
+                    <li><a aria-label="Ir para sobre" href="#sobre" onclick="compartilhar()">Sobre</a></li>
+                    <li><a aria-label="Ir para sobre" href="#trailer" onclick="compartilhar()">Trailer</a></li>
+                    <li>
+                        <a aria-label="Ir para Netflix" href="https://www.netflix.com" target="_blank"></a>
+                        <img alt="Netflix" src="netflix-logo.png">
+                    </li>
+                    <li><a aria-label="Ir para sobre" href="#atores" onclick="compartilhar()">Atores</a></li>
+                    <li><a aria-label="Ir para sobre" href="#avaliacoes" onclick="compartilhar()">Avaliações</a></li>                
+                </ul>                
+            </div>
+
+            <div class="row ph-30 gap-150 pt-50">
+                <div class="info_serie">
+                    <h4 class="titulo">Supernatural</h4>
+                    <h6 class="genero m-t-14 m-b-28">Drama, Mistério, Terror</h6>
+                    <span class="descricao">A série segue os irmãos Sam Winchester e Dean Winchester que viajam por toda a América em um Chevrolet Impala 1967 preto investigando e combatendo eventos paranormais e outras ocorrências inexplicáveis, muitas delas baseadas em lendas urbanas americanas e folclore, assim como diferentes criaturas sobrenaturais.</span>
     
-</body>
+                    <div class="row m-t-56">
+                        <span>1ª Temporada</span>
+                        <img src="chevron-left.png">
+                        <img src="chevron-right.png">
+                    </div>
+    
+                    <div class="episodios">
+                        <div class="card-episodio" style="background-image: url(imagemepi1.jpeg);" onclick="assistirEpisodio1()"></div>
+                        <div class="card-episodio" style="background-image: url(imagemepi2.jpeg);" onclick="assistirEpisodio2()"></div>
+                        <div class="card-episodio" style="background-image: url(imagemepi3.jpeg);" onclick="assistirEpisodio3()"></div>
+                    </div>
+                </div>
+    
+                <img class="poster" src="poster.png">
+                    
+            </div>
+
+            <div class="social">
+                <div class="icone" onclick="compartilharInstagram()"><img src="instagram.png"></div>
+                <div class="icone" onclick="compartilharFacebook()"><img src="facebook.png"></div>
+                <div class="icone" onclick="compartilharTwitter()"><img src="twitter.png"></div>
+            </div>
+            
+    
+            <div class="footer">
+                <ul>
+                    <li> 2005 </li>
+                    <li> 1 TEMPORADA </li>
+                    <li> IMDB 9.5 </li>
+                </ul>
+            </div>       
+        
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
+
