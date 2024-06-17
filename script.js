@@ -66,8 +66,8 @@ const listaEpisodios = document.getElementById("lista-episodios")
 
 episodios.forEach((episodio) => {
   const cardEpisodio = document.createElement("div");
-  cardEpisodio.className = "card-episodio";
-  console.log(cardEpisodio);
+  cardEpisodio.className = "card-episodio";  
+  //console.log(cardEpisodio);
 
   cardEpisodio.style.backgroundImage = `url(${episodio.imagem})`;
   cardEpisodio.style.backgroundSize = "cover";
@@ -75,11 +75,11 @@ episodios.forEach((episodio) => {
 
   cardEpisodio.innerHTML = `                        
                         <span>${episodio.episodio}</span>
-                        <span>${episodio.tempo}</span>
+                        <span>Duração:${episodio.tempo}</span>
                         
-                        <button onclick="assistirEpisodio(${episodio.id})">Assistir</button>
+                        <button id=botao onclick="assistirEpisodio(${episodio.id})">Assistir</button>
                         `
-  console.log(cardEpisodio);
+  // console.log(cardEpisodio);
   listaEpisodios.appendChild(cardEpisodio);
 });
 
